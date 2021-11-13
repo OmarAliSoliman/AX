@@ -871,5 +871,8 @@ button {
   .icon-mob {
     display: block !important;
   }
+  .creative {
+    padding-top: 350px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
