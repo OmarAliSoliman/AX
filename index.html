@@ -7,11 +7,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/all.min.css">
   <link rel="stylesheet" href="./assets/css/bootstrap-en.min.css">
+  <link rel="stylesheet" href="./assets/css/animate.css">
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Document</title>
 </head>
 
 <body>
+
+  <div class="splash">
+    <div>
+      <img src="./assets/images/logo.png" alt="" />
+      <div class="loadProgress">
+        <span class="lineStyle"></span>
+      </div>
+    </div>
+  </div>
 
   <!-- sidenav -->
   <div class="bg-sidenavOpen"></div>
@@ -23,11 +33,11 @@
         <i class="fas fa-times"></i>
       </a>
       <ul class="list-unstyled links">
-        <li><a href="">home</a></li>
-        <li><a href="">work</a></li>
-        <li><a href="">clients</a></li>
-        <li><a href="">user <span>vices</span></a></li>
-        <li><a href="">contact us</a></li>
+        <li><a href="#home">home</a></li>
+        <li><a href="#work">work</a></li>
+        <li><a href="#clients">clients</a></li>
+        <li><a href="#userVices">user <span>vices</span></a></li>
+        <li><a href="#contactUs">contact us</a></li>
       </ul>
     </div>
   </div>
@@ -37,20 +47,20 @@
   <div class="top-navbar">
     <div class="container">
       <div class="wrapper">
-        <div class="logo">
+        <div class="logo wow animate__animated animate__bounceInDown">
           <img class="original" src="./assets/images/logo.png" alt="">
           <img src="./assets/images/logo-mobile.png" alt="" class="mob-img">
         </div>
         <div class="links">
           <ul class="list-unstyled">
-            <li><a href="">home</a></li>
-            <li><a href="">work</a></li>
-            <li><a href="">clients</a></li>
-            <li><a href="">user <span>vices</span></a></li>
-            <li><a href="">contact us</a></li>
+            <li class="wow animate__animated animate__fadeIn" data-wow-delay="0.2s"><a href="#home">home</a></li>
+            <li class="wow animate__animated animate__fadeIn" data-wow-delay="0.4s"><a href="#work">work</a></li>
+            <li class="wow animate__animated animate__fadeIn" data-wow-delay="0.6s"><a href="#clients">clients</a></li>
+            <li class="wow animate__animated animate__fadeIn" data-wow-delay="0.8s"><a href="#userVices">user <span>vices</span></a></li>
+            <li class="wow animate__animated animate__fadeIn" data-wow-delay="1s"><a href="#contactUs">contact us</a></li>
           </ul>
         </div>
-        <div class="icon-mob">
+        <div class="icon-mob" class="wow animate__animated animate__fadeIn">
           <a onclick="openNav()"><i class="fas fa-bars"></i></a>
         </div>
       </div>
@@ -58,16 +68,16 @@
   </div>
 
   <!-- header -->
-  <div class="header">
+  <div class="header" id="home">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-6">
           <div class="header-content">
-            <h5><span>He</span><span class="second">llo</span></h5>
+            <h5><span class="wow animate__animated animate__fadeIn" data-wow-delay="0.2s">He</span><span class="second wow animate__animated animate__fadeIn" data-wow-delay="0.4s">llo</span></h5>
           </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-6">
-          <div class="header-img">
+          <div class="header-img wow animate__animated animate__fadeIn" data-wow-delay="0.6s">
             <img src="./assets/images/header-img.png" alt="">
           </div>
         </div>
@@ -75,15 +85,15 @@
     </div>
   </div>
 
-  <div class="we-can-help">
+  <div class="we-can-help" id="userVices">
     <div class="section-header">
-      <h5>we can help you alot</h5>
-      <p>with your ....</p>
+      <h5 class="wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">we can help you alot</h5>
+      <p class="wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">with your ....</p>
     </div>
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-6">
-          <div class="serv-card">
+          <div class="serv-card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
             <div class="card-header">
               <h5 class="card-title">Branding</h5>
             </div>
@@ -94,7 +104,7 @@
           </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-6">
-          <div class="serv-card">
+          <div class="serv-card wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
             <div class="card-header">
               <h5 class="card-title">Online & Offilne
                 Marketing</h5>
@@ -106,7 +116,7 @@
           </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-6">
-          <div class="serv-card">
+          <div class="serv-card wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
             <div class="card-header">
               <h5 class="card-title">Photography & Video
                 Production</h5>
@@ -118,7 +128,7 @@
           </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-6">
-          <div class="serv-card">
+          <div class="serv-card wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">
             <div class="card-header">
               <h5 class="card-title">Design & Bulding
                 Websites</h5>
@@ -131,7 +141,7 @@
           </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-6">
-          <div class="serv-card">
+          <div class="serv-card wow animate__animated animate__fadeInUp" data-wow-delay="1s">
             <div class="card-header">
               <h5 class="card-title">Desktop & Mobile
                 APPS Development</h5>
@@ -144,7 +154,7 @@
           </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-6">
-          <div class="serv-card">
+          <div class="serv-card wow animate__animated animate__fadeInUp" data-wow-delay="1.2s">
             <div class="card-header">
               <h5 class="card-title">Design & Bulding
                 Websites</h5>
@@ -161,56 +171,56 @@
   </div>
 
 
-  <div class="clients">
+  <div class="clients" id="clients">
     <div class="container">
       <div class="section-header">
-        <h5>We succeded</h5>
-        <span>with</span>
+        <h5 class="wow animate__animated animate__fadeIn" data-wow-delay="0.2s">We succeded</h5>
+        <span class="wow animate__animated animate__fadeIn" data-wow-delay="0.4s">with</span>
       </div>
       <div class="img-parent">
         <div class="row">
           <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card-img">
+            <div class="card-img wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
               <img src="./assets/images/client-4.png" alt="">
             </div>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card-img">
+            <div class="card-img wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
               <img src="./assets/images/client-3.png" alt="">
             </div>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card-img">
+            <div class="card-img wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
               <img src="./assets/images/client-2.png" alt="">
             </div>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card-img">
+            <div class="card-img wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">
               <img src="./assets/images/clinet-2.png" alt="">
             </div>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card-img">
+            <div class="card-img wow animate__animated animate__fadeInUp" data-wow-delay="1s">
               <img src="./assets/images/client-4.png" alt="">
             </div>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card-img">
+            <div class="card-img wow animate__animated animate__fadeInUp" data-wow-delay="1.2s">
               <img src="./assets/images/client-3.png" alt="">
             </div>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card-img">
+            <div class="card-img wow animate__animated animate__fadeInUp" data-wow-delay="1.4s">
               <img src="./assets/images/client-2.png" alt="">
             </div>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card-img">
+            <div class="card-img wow animate__animated animate__fadeInUp" data-wow-delay="1.6s">
               <img src="./assets/images/clinet-2.png" alt="">
             </div>
           </div>
           <div class="col-sm-12 col-md-12 col-lg-12">
-            <div class="and-more">
+            <div class="and-more wow animate__animated animate__fadeInUp" data-wow-delay="1.8s">
               <span></span>
               <h5>and more</h5>
               <span></span>
@@ -222,7 +232,7 @@
   </div>
 
 
-  <div class="creative">
+  <div class="creative wow animate__animated animate__fadeInUp">
     <div class="container">
       <img src="./assets/images/creative-world.png" alt="" class="creative-worls">
       <img src="./assets/images/creative.png" alt="" class="creative-img">
@@ -230,11 +240,11 @@
     </div>
   </div>
 
-  <div class="works">
+  <div class="works" id="work">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-4">
-          <div class="work-card">
+          <div class="work-card  wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
             <div class="card-header">
               <h5>Jo Lion Project</h5>
             </div>
@@ -247,7 +257,7 @@
           </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4">
-          <div class="work-card">
+          <div class="work-card  wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
             <div class="card-header">
               <h5>Jo Lion Project</h5>
             </div>
@@ -260,7 +270,7 @@
           </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4">
-          <div class="work-card">
+          <div class="work-card  wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
             <div class="card-header">
               <h5>Jo Lion Project</h5>
             </div>
@@ -273,7 +283,7 @@
           </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4">
-          <div class="work-card">
+          <div class="work-card  wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">
             <div class="card-header">
               <h5>Jo Lion Project</h5>
             </div>
@@ -286,7 +296,7 @@
           </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4">
-          <div class="work-card">
+          <div class="work-card  wow animate__animated animate__fadeInUp" data-wow-delay="1s">
             <div class="card-header">
               <h5>Jo Lion Project</h5>
             </div>
@@ -299,7 +309,7 @@
           </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4">
-          <div class="work-card">
+          <div class="work-card  wow animate__animated animate__fadeInUp" data-wow-delay="1.2s">
             <div class="card-header">
               <h5>Jo Lion Project</h5>
             </div>
@@ -315,10 +325,10 @@
     </div>
   </div>
 
-  <footer class="site-footer">
+  <footer class="site-footer" id="contactUs">
     <div class="container">
       <div class="wrapper">
-        <div class="social">
+        <div class="social  wow animate__animated animate__fadeIn" data-wow-delay="0.2s">
           <ul class="list-unstyled">
             <li><a href=""><i class="fab fa-behance"></i></a></li>
             <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
@@ -328,17 +338,23 @@
             <li><a href=""><i class="fab fa-vaadin"></i></a></li>
           </ul>
         </div>
-        <span class="line"></span>
-        <div class="logo">
+        <span class="line  wow animate__animated animate__fadeIn" data-wow-delay="0.4s"></span>
+        <div class="logo  wow animate__animated animate__fadeIn" data-wow-delay="0.6s">
           <img src="./assets/images/logo.png" alt="">
         </div>
       </div>
     </div>
   </footer>
 
+
+  <div id="floating">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+
   <script src="./assets/js/jquery-3.3.1.min.js"></script>
   <script src="./assets/js/popper.min.js"></script>
   <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/wow.js"></script>
   <script src="./assets/js/main.js"></script>
 </body>
 

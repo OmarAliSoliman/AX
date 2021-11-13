@@ -39,21 +39,25 @@ button {
 #floating {
   position: fixed;
   z-index: 1;
-  width: 65px;
-  height: 65px;
-  line-height: 70px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   bottom: 15px;
   right: 20px;
   cursor: pointer;
-  background-color: #fff;
-  box-shadow: 0 3px 9px rgba($color: #000000, $alpha: 16%);
+  background-color: #1d1d1d;
+  box-shadow: 3px 3px 9px rgba(0,0,0,0.4);
+  border-radius: 5px;
   opacity: 0;
   z-index: 999;
   transition: all 0.5s;
+  border: 0;
   i {
-    color: #000;
-    font-size: 25px;
+    color: #fff;
+    font-size: 20px;
     font-weight: bold;
   }
 }
@@ -75,7 +79,7 @@ button {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #fff;
+  background-color: #1d1d1d;
   z-index: 999999;
   text-align: center;
   padding: 0 20px 0;
@@ -86,7 +90,7 @@ button {
 
 .splash img {
   display: inline-block;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
   max-width: 255px;
   width: auto;
 }
@@ -98,6 +102,7 @@ button {
   margin: 0 auto;
   overflow: hidden;
   position: relative;
+  border-radius: 10px;
   max-width: 100%;
 }
 
@@ -113,8 +118,8 @@ button {
   top: 0;
   width: 180px;
   height: 100%;
-
-  background-color: #25a1a5;
+  border-radius: 10px;
+  background-color: $mainColor;
   -moz-animation: move-progress 3s linear infinite;
   -ms-animation: move-progress 3s linear infinite;
   -o-animation: move-progress 3s linear infinite;
@@ -160,13 +165,13 @@ button {
 
 .sidenav {
   height: 100%;
-  width: 200px;
+  width: 100%;
   max-width: 100%;
   position: fixed;
   z-index: 9999999;
-  top: 0;
-  left: -400px;
-  background-color: #fff;
+  top: -600px;
+  // left: -500px;
+  background-color: #1d1d1d;
   box-shadow: 0 22px 22px rgba(0,0,0, 0.05);
   overflow-x: hidden;
   padding: 0 20px;
@@ -176,6 +181,7 @@ button {
   padding-bottom: 10px;
   display: flex;
   align-items: center;
+  justify-content: center;
   text-align: left;
   .logo {
     margin-top: 25px;
@@ -195,33 +201,28 @@ button {
       border-radius: 50%;
       text-align: center;
       border: 2px solid $mainColor;
-      color: $mainColor !important;
+      color: #fff !important;
       line-height: 37px;
       // @extend %transition;
     }
   }
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap");
 
   .links {
-    text-align: left;
+    text-align: center;
     li{
       position: relative;
-      &::after{
-        position: absolute;
-        content: "";
-        background-color: $mainColor;
-        top: 50%;
-        width: 15px;
-        height: 15px;
-        top: 0;
-        left: -20px;
-        top: 50%;
-        transform: translate(0, -50%);
-      }
     } 
     a{
-      font-size: 22px;
-      color: #1d1d1d;
+      font-size: 40px;
+      // color: #1d1d1d;
+      color: unset;
       margin-bottom: 5px;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-family: "Open Sans", sans-serif;
+      text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+
     }
   }
 
@@ -238,26 +239,6 @@ button {
       background-color: $mainColor;
       color: #fff;
       border-radius: 50%;
-    }
-  }
-  .lang {
-    margin-top: 10px;
-    .spanLabel {
-      font-size: 14px;
-      font-weight: 200;
-    }
-    .nice-select {
-      float: none;
-      display: inline-block;
-      border: 0;
-      // padding: 0;
-      padding-left: 0;
-      padding-bottom: 0;
-      font-weight: bold;
-      color: #002060;
-      font-size: 14px;
-      height: 33px;
-      line-height: 33px;
     }
   }
 }
@@ -291,6 +272,7 @@ button {
   width: 100%;
   padding-top: 40px;
   z-index: 99999;
+  transition: all .3s ease-in-out;
   .wrapper {
     display: flex;
     align-items: center;
@@ -385,7 +367,30 @@ button {
       }
     }
   }
+  .icon-mob, .mob-img{
+    display: none;
+  }
 }
+
+.fixedTop{
+  position: fixed;
+  background-color: #1d1d1d;
+  box-shadow: 3px 3px 3px rgba(0,0,0, 0.05);
+  padding-bottom: 20px;
+}
+
+// .fixlogo{
+//   .original{
+//     opacity: 0;
+//     visibility: hidden;
+//   }
+//   .mob-img{
+//     opacity: 1;
+//     visibility: visible;
+//     display: block;
+//     width: 70px !important;
+//   }
+// }
 
 /* header */
 .header {
@@ -504,7 +509,7 @@ button {
     color: rgba(255, 255, 255, 0.7);
   }
   a.card-link {
-    font-size: 18px;
+    font-size: 20px;
     color: #fff;
     background-color: $mainColor;
     display: inline-block;
@@ -512,6 +517,10 @@ button {
     width: 100%;
     border-radius: 30px;
     padding: 10px;
+    &:hover{
+      background-color: #fff;
+      color: $mainColor;
+    }
   }
 }
 
@@ -702,10 +711,17 @@ button {
     .wrapper{
       flex-direction: column;
       justify-content: center;
+      .logo{
+        text-align: center;
+        // margin-bottom: 20px;
+      }
+      .links{
+        margin-top: 20px;
+      }
     }
   }
   .header{
-    height: auto;
+    // height: auto;
     padding-top: 150px;
   }
   .creative .creative-sign{
@@ -728,6 +744,9 @@ button {
 }
 
 @media(max-width: 524px){
+  .header{
+    height: auto;
+  }
   .creative .creative-img{
     display: none;
   }
@@ -757,5 +776,8 @@ button {
         }
       }
     }
+  }
+  .icon-mob{
+    display: block !important;
   }
 }
