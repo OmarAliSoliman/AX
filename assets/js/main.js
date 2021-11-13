@@ -6,7 +6,7 @@ $(document).ready(function () {
   
   if ($(".bg-sidenavOpen").length) {
     $(".bg-sidenavOpen").on("click", function () {
-      $("#mySidenav").css("top", "-700px");
+      $("#mySidenav").css("left", "-500px");
       $(this).css("display", "none");
       document.body.classList.remove("openMenuActive");
     });
@@ -36,7 +36,7 @@ $(document).ready(function () {
 
   $('.sidenav .links li a').map((index, item)=>{
     $(item).click(function(){
-      $("#mySidenav").css("top", "-700px");
+      $("#mySidenav").css("left", "-500px");
       $('.bg-sidenavOpen').css("display", "none");
       document.body.classList.remove("openMenuActive");
     })
@@ -47,14 +47,14 @@ $(document).ready(function () {
 });
 
 function openNav() {
-  document.getElementById("mySidenav").style.top = "0";
+  document.getElementById("mySidenav").style.left = "0";
   document.querySelector(".bg-sidenavOpen").style.display = "block";
   document.body.classList.add("openMenuActive");
 }
 
 /* Set the width of the side navigation to 0 */
 function closeNav() {
-  document.getElementById("mySidenav").style.top = "-700px";
+  document.getElementById("mySidenav").style.left = "-500px";
   document.querySelector(".bg-sidenavOpen").style.display = "none";
   document.body.classList.remove("openMenuActive");
 }

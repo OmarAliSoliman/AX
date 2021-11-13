@@ -157,7 +157,8 @@ button {
   max-width: 100%;
   position: fixed;
   z-index: 9999999;
-  top: -700px;
+  top: 0;
+  left: -500px;
   background-color: #1d1d1d;
   -webkit-box-shadow: 0 22px 22px rgba(0, 0, 0, 0.05);
           box-shadow: 0 22px 22px rgba(0, 0, 0, 0.05);
