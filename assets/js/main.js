@@ -6,7 +6,7 @@ $(document).ready(function () {
   
   if ($(".bg-sidenavOpen").length) {
     $(".bg-sidenavOpen").on("click", function () {
-      $("#mySidenav").css("left", "-500px");
+      $("#mySidenav").css("left", "-100%");
       $(this).css("display", "none");
       document.body.classList.remove("openMenuActive");
     });
@@ -36,7 +36,7 @@ $(document).ready(function () {
 
   $('.sidenav .links li a').map((index, item)=>{
     $(item).click(function(){
-      $("#mySidenav").css("left", "-500px");
+      $("#mySidenav").css("left", "-100%");
       $('.bg-sidenavOpen').css("display", "none");
       document.body.classList.remove("openMenuActive");
     })
@@ -54,7 +54,7 @@ function openNav() {
 
 /* Set the width of the side navigation to 0 */
 function closeNav() {
-  document.getElementById("mySidenav").style.left = "-500px";
+  document.getElementById("mySidenav").style.left = "-100%";
   document.querySelector(".bg-sidenavOpen").style.display = "none";
   document.body.classList.remove("openMenuActive");
 }
